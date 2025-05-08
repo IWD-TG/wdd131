@@ -1,2 +1,101 @@
 /*object-fit: cover
 box-shadow: (dont forget)*/
+
+/*standard and full screen*/
+body{
+    text-align: center;
+    margin: 0;
+}
+button:disabled{
+    opacity: 0;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+button{
+    opacity: 0;
+    pointer-events: none;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+nav{
+    display: grid;
+    margin-left: 25%;
+    margin-right: 25%;
+    grid-template-columns: repeat(5, 1fr);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: blue;
+    color: white;
+}
+h4{
+    font-size: 20px;
+}
+main div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 5px 5px black;
+    border: 3px white;
+    padding: 5px;
+    width: 250px;
+    height: 200px;
+}
+footer{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+
+/*medium for tablet I guess*/
+@media (max-width: 900px) {
+    main div {
+        grid-template-columns: repeat(2, auto); 
+    }
+
+    nav {
+        display: none; 
+    }
+
+    button {
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+}
+
+/* For small screens */
+@media (max-width: 600px) {
+    main div {
+        grid-template-columns: 1fr; 
+    }
+
+    nav {
+        display: block; 
+    }
+
+    button {
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+
+    nav a {
+        display: block; 
+        margin: 10px 0;
+    }
+}
