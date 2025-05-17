@@ -27,11 +27,8 @@ const closeButton = document.querySelector(".close-viewer");
 gallery.addEventListener("click", (event) => {
     const clickedImage = event.target.closest("img");
     if (clickedImage) {
-        const src = clickedImage.getAttribute("src");
-        const alt = clickedImage.getAttribute("alt");
-        const baseName = src.split("-")[0]; // images/norris
-        modalImage.src = `..\images\norris-full.jpeg`;
-        modalImage.alt = alt;
+        modalImage.src = "images/norris-full.jpeg";
+        modalImage.alt = clickedImage.alt;
         modal.showModal();
     }
 });
@@ -45,4 +42,3 @@ modal.addEventListener("click", (event) => {
         modal.close();
     }
 });
-
