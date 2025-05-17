@@ -30,7 +30,7 @@ gallery.addEventListener("click", (event) => {
         const src = clickedImage.getAttribute("src");
         const alt = clickedImage.getAttribute("alt");
         const baseName = src.split("-")[0]; // images/norris
-        modalImage.src = `projects\coolpics\images\norris-full.jpeg`;
+        modalImage.src = `..\images\norris-full.jpeg`;
         modalImage.alt = alt;
         modal.showModal();
     }
