@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="A book review site for kids"/>
+<meta name="author" content="Gabriel Gross"/>
+<title>Kids Read for Fun</title>
+<link rel="stylesheet" href="styles/styles.css"/>
+<script src="js/book-blog.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Kids Read for Fun</h1>
+    <nav id="mainNav">
+        <a href="#">About</a>
+        <a href="#">Archive</a>
+        <a href="#">Search</a>
+    </nav>
+</header>
+
+<main>
+    <div id="primaryContainer">
+        <div id="bookList">
+        
+            <div class="secondContainer">
+                <div class="aboutContainer">
+                    <h4>July 5, 2022</h4>
+                    <p>
+                    10–14<br>
+                    Fantasy<br>
+                    ★★★★
+                    </p>
+                </div>
+                <div class="bookContainer">
+                    <h2>Septimus Heap Book One: Magyk</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book cover for Septimus Heap 1">
+                    <p>If you enjoy stories about seventh sons of seventh sons and magyk, this is the book for you.</p>
+                </div>
+            </div>
+            <div class="secondContainer">
+                <div class="aboutContainer">
+                    <h4>December 12, 2021</h4>
+                    <p>
+                    12–16<br>
+                    Fantasy<br>
+                    ★★★★★
+                    </p>
+                </div>
+                <div class="bookContainer">
+                    <h2>Magnus Chase Book One: Sword of Summer</h2>
+                    <img src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300" alt="Book cover for Magnus Chase 1">
+                    <p>The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="filterContainer">
+        <label for="sort">Sort:</label>
+        <select id="sort">
+            <option value="all">All</option>
+            <option value="books">Books</option>
+            <option value="electronic">Electronic</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <select id="age">
+            <option value="all">All</option>
+            <option value="0-8">0-8</option>
+            <option value="8-12">8-12</option>
+            <option value="12-18">12-18</option>
+            <option value="18+">18+</option>
+        </select>
+
+        <label for="genre">Genre:</label>
+        <select id="genre">
+            <option value="all">All</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="romance">Romance</option>
+            <option value="history">History</option>
+        </select>
+
+        <label for="rating">Rating:</label>
+        <select id="rating">
+            <option value="all">All</option>
+            <option value="1-star">1-star</option>
+            <option value="2-star">2-star</option>
+            <option value="3-star">3-star</option>
+            <option value="4-star">4-star</option>
+            <option value="5-star">5-star</option>
+        </select>
+        </div>
+    </div>
+</main>
+</body>
+</html>

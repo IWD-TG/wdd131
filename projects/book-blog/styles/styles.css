@@ -1,0 +1,114 @@
+/*realized I didnt leave a single comment inmy current html so I am forcing myself to here*/
+
+/* Reset and base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Nav Bar */
+#mainNav {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#mainNav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Layout: Books + Filter */
+#primaryContainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+/* Stack books vertically */
+#bookList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Each book block */
+.secondContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+/* Book info (left column) */
+.aboutContainer {
+    font-size: 0.95em;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.aboutContainer h4 {
+    margin-bottom: 10px;
+}
+
+.aboutContainer p {
+    line-height: 1.5;
+}
+
+/* Book content (right column) */
+.bookContainer h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.bookContainer img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bookContainer p {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Filter sidebar */
+#filterContainer {
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: grid;
+    gap: 10px;
+}
+
+#filterContainer label {
+    font-weight: bold;
+}
+
+#filterContainer select {
+    padding: 5px;
+    width: 100%;
+}
