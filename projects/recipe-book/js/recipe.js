@@ -206,3 +206,4 @@ function init() {
 
 
 window.addEventListener('DOMContentLoaded', init);
+//honestly didnt enjoy this one but I think that was just cause of other things in my life adding difficulty
